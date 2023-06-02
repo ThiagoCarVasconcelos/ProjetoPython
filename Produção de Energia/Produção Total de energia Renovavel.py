@@ -7,7 +7,7 @@ import seaborn as sns
 dt = pd.read_csv('Energia Mundial.csv', sep=';', parse_dates=['Data'], dayfirst=True, dtype={'Produção Total de Energia Renovável': str})
 
 # Filtrar os dados para o período desejado
-start_date = '1992-12-31'
+start_date = '1992-12-30'
 end_date = '2022-12-31'
 filtered_dt = dt[(dt['Data'] >= start_date) & (dt['Data'] <= end_date)].copy()
 
